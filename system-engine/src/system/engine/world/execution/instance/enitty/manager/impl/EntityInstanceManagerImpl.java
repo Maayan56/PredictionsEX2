@@ -61,6 +61,8 @@ public class EntityInstanceManagerImpl implements EntityInstanceManager {
     public Float getConsistencyByEntityAndPropertyName(String entityName,String propertyName){
         float sum=0.0f;
         List<EntityInstance> entityInstanceList=StartEntityInstanceByEntityDef.get(entityName);
+        if(entityInstanceList==null)
+            return 0.0f;
         for(EntityInstance entityInstance:entityInstanceList){
             if(entityInstance!=null)
                 sum+=entityInstance.getPropertyConsistencyByName(propertyName);

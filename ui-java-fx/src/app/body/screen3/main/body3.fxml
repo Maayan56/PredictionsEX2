@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<HBox prefHeight="400.0" prefWidth="669.0" stylesheets="@body3.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.body.screen3.main.Body3Controller">
+<HBox prefHeight="400.0" prefWidth="669.0" styleClass="app-background" stylesheets="@../../../main/default.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.body.screen3.main.Body3Controller">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="NEVER">
          <content>

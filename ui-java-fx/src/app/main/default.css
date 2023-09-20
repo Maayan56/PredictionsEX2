@@ -1,0 +1,188 @@
+.tile {
+    -fx-background-color: lightblue;
+    -fx-border-width: 5px;
+    -fx-border-color: #2e8b57;
+    -fx-background-radius: 5.0;
+}
+
+.my-label{
+    -fx-text-fill: BLack;
+    -fx-font-size: 10px;
+    -fx-font-weight: BOLD;
+}
+
+.my-label-def{
+    -fx-text-fill: BLack;
+    -fx-font-size: 12px;
+    -fx-font-weight: BOLD;
+}
+
+.my-label-world-grid{
+    -fx-text-fill: Black;
+    -fx-font-size: 16px;
+    -fx-font-weight: BOLD;
+}
+
+/*body2*/
+#clear-button{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: GREEN;
+}
+
+#start-button{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: GREEN;
+}
+
+/*body1*/
+#label1{
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+}
+
+#label2{
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+}
+
+#text-flow-1{
+    color: blue;
+}
+
+#text-flow-2{
+    color: blue;
+}
+
+/*header*/
+.move-to-page-button{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: GREY;
+}
+
+#load-file-button{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: GREEN;
+}
+.button-with-shape{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-border-color: BLACK;
+    -fx-background-color: GREY;
+}
+
+#queue-man-button{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: BLUE;
+}
+.label-queue{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 10px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: BLUE;
+}
+.background{
+    -fx-background-color: BLUE;
+}
+
+/*start button*/
+#continue-button{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: GREEN;
+}
+
+#cancel-button{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: BLUE;
+}
+
+/*tab pane*/
+.custom-tab-pane .tab-header-area {
+    visibility: hidden;
+    -fx-padding: 0;
+}
+
+.custom-tab-pane .tab-content-area {
+    -fx-padding: 0;
+
+}
+
+/*simulation progress*/
+#pause-button{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: BLUE;
+}
+#rerun-button{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: #d08a3f;
+}
+
+#stop-button{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: RED;
+}
+
+#resume-button{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: Green;
+}
+
+.simulation-label {
+    -fx-font-size: 12px;
+    -fx-background-color: #b0a3a3;
+    -fx-padding: 4px;
+    -fx-border-radius: 2px;
+}
+
+.my-label-no-background {
+    -fx-font-size: 12px;
+    -fx-padding: 4px;
+    -fx-border-radius: 2px;
+}
+
+.my-gridPane {
+    -fx-alignment: center;
+    -fx-padding: 10px;
+    -fx-background-color: #F5F5F5;
+}
+
+/*body2*/
+#label1{
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+}
+
+#label2{
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+}
+
+#text-flow-1{
+    color: blue;
+}
+
+#text-flow-2{
+    color: blue;
+}

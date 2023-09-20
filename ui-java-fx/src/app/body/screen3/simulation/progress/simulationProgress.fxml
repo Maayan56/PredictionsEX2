@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="263.0" prefWidth="631.0" stylesheets="@simulationProgress.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.body.screen3.simulation.progress.SimulationProgressController">
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="263.0" prefWidth="631.0" stylesheets="@../../../../main/default.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.body.screen3.simulation.progress.SimulationProgressController">
    <children>
       <GridPane maxHeight="1.7976931348623157E308" prefHeight="277.0" prefWidth="637.0" styleClass="my-gridPane">
         <columnConstraints>
@@ -30,23 +30,23 @@
             <RowConstraints maxHeight="44.0" minHeight="0.0" prefHeight="34.5" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label id="tick-number-label" styleClass="my-label" text="Tick number" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            <Label id="tick-number-label" styleClass="simulation-label" text="Tick number" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets top="4.0" />
                </GridPane.margin></Label>
-            <Label id="seconds-label" styleClass="my-label" text="Seconds past" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <Label id="seconds-label" styleClass="simulation-label" text="Seconds past" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets top="4.0" />
                </GridPane.margin>
             </Label>
-            <Label id="entities-left-label" styleClass="my-label" text="Entities left alive" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <Label id="entities-left-label" styleClass="simulation-label" text="Entities left alive" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets top="4.0" />
                </GridPane.margin>
             </Label>
             <Label fx:id="secondsLabel" styleClass="my-label-no-background" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
             <Label fx:id="ticksLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="my-label-no-background" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-            <Label id="simulation-progress-label" prefHeight="25.0" prefWidth="169.0" styleClass="my-label" text="Simulation progress massage" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <Label id="simulation-progress-label" prefHeight="25.0" prefWidth="169.0" styleClass="simulation-label" text="Simulation progress massage" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets top="4.0" />
                </GridPane.margin></Label>
@@ -66,7 +66,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
             </GridPane>
-            <Button id="rerun-button" fx:id="rerunButton" mnemonicParsing="false" onMouseClicked="#onRerunClick" prefHeight="33.0" prefWidth="71.0" stylesheets="@simulationProgress.css" text="Rerun" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowSpan="2" />
+            <Button id="rerun-button" fx:id="rerunButton" mnemonicParsing="false" onMouseClicked="#onRerunClick" prefHeight="33.0" prefWidth="71.0" stylesheets="@../../../../main/default.css" text="Rerun" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowSpan="2" />
             <Label fx:id="totalSecondsLabel" styleClass="my-label-no-background" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
             <Label fx:id="totalTicksLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="my-label-no-background" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
             <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">

@@ -14,7 +14,7 @@
 
 <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.body.screen2.start.button.good.StartButtonController">
    <content>
-      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="393.0" prefWidth="600.0" stylesheets="@startButton.css">
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="393.0" prefWidth="600.0" stylesheets="@../../../../../main/default.css">
          <bottom>
             <GridPane prefHeight="54.0" prefWidth="600.0" BorderPane.alignment="CENTER">
               <columnConstraints>
@@ -26,7 +26,7 @@
                 <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="12.5" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button id="cancel-button" fx:id="cancelButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#onCancelClick" prefHeight="24.0" prefWidth="81.0" stylesheets="@startButton.css" text="Cancel" GridPane.halignment="LEFT">
+                  <Button id="cancel-button" fx:id="cancelButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#onCancelClick" prefHeight="24.0" prefWidth="81.0" stylesheets="@../../../../../main/default.css" text="Cancel" GridPane.halignment="LEFT">
                      <GridPane.margin>
                         <Insets left="10.0" />
                      </GridPane.margin>
@@ -59,7 +59,7 @@
             </GridPane>
          </top>
          <center>
-            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <HBox id="show-tile" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <BorderPane.margin>
                   <Insets bottom="10.0" top="10.0" />
                </BorderPane.margin>

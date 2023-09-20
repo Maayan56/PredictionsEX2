@@ -3,22 +3,39 @@ package app.header;
 import app.main.AppController;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
+import javafx.scene.shape.Path;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 import system.engine.api.SystemEngineAccess;
 
 import javax.xml.bind.JAXBException;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.net.URL;
+import java.nio.file.*;
+import java.nio.file.attribute.BasicFileAttributes;
+import java.util.EnumSet;
+
 import javafx.scene.shape.Rectangle;
 import javafx.geometry.Insets;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import static main.CommonResourcesPaths.APP_FXML_INCLUDE_RESOURCE;
+import static main.CommonResourcesPaths.BODY_FXML_RESOURCE;
 
 public class HeaderController {
 
@@ -182,20 +199,47 @@ public class HeaderController {
     @FXML
     void onAnimationsClick(MouseEvent event) {
         activeAnimations = !activeAnimations;
+        if(!activeAnimations)
+            animationsButton.setText("Enable animations");
+        else
+            animationsButton.setText("Disable animations");
     }
+
 
     @FXML
-    void onDefaultSkinClick(MouseEvent event) {
-
+    void onDefaultSkinClick(ActionEvent event) {
+        Scene scene = headerComponent.getScene();
+        ObservableList<String> stylesheets = scene.getStylesheets();
+        if (!stylesheets.isEmpty()) {
+            stylesheets.remove(stylesheets.size() - 1);
+        }
+        // Add the "new.css" stylesheet to the scene
+        scene.getStylesheets().add(getClass().getResource("/app/main/default.css").toExternalForm());
     }
+
 
     @FXML
     void onSkin1Click(MouseEvent event) {
 
+        Scene scene = headerComponent.getScene();
+        ObservableList<String> stylesheets = scene.getStylesheets();
+        if (!stylesheets.isEmpty()) {
+            stylesheets.remove(stylesheets.size() - 1);
+        }
+
+        // Add the "new.css" stylesheet to the scene
+        scene.getStylesheets().add(getClass().getResource("/app/main/appGlobal1.css").toExternalForm());
     }
+
 
     @FXML
     void onSkin2Click(MouseEvent event) {
-
+        Scene scene = headerComponent.getScene();
+        ObservableList<String> stylesheets = scene.getStylesheets();
+        if (!stylesheets.isEmpty()) {
+            stylesheets.remove(stylesheets.size() - 1);
+        }
+        // Add the "new.css" stylesheet to the scene
+        scene.getStylesheets().add(getClass().getResource("/app/main/appGlobal2.css").toExternalForm());
     }
 }

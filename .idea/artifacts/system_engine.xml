@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="system-engine">
-    <output-path>$PROJECT_DIR$/out/artifacts/system_engine</output-path>
-    <root id="archive" name="system-engine.jar">
-      <element id="module-output" name="system-engine" />
-    </root>
-  </artifact>
-</component>

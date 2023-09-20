@@ -53,8 +53,11 @@ public class PropertyInstanceImpl implements PropertyInstance {
     @Override
     public void setLastTickNumberOfValueUpdate(Integer lastTickNumberOfValueUpdate, Object newValue) {
         if(! value.equals(newValue)){
-            this.lastTickNumberOfValueUpdate = lastTickNumberOfValueUpdate;
-            ticksListOfPropertyValueUpdate.add(lastTickNumberOfValueUpdate+1);
+            if(this.lastTickNumberOfValueUpdate!=lastTickNumberOfValueUpdate)
+            {
+                this.lastTickNumberOfValueUpdate = lastTickNumberOfValueUpdate;
+                ticksListOfPropertyValueUpdate.add(lastTickNumberOfValueUpdate+1);
+            }
         }
 
     }

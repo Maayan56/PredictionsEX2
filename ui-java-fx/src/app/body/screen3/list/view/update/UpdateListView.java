@@ -42,6 +42,12 @@ public class UpdateListView implements Runnable{
 
     private void changeStatusOfSimulationsListItem(Integer simulationID, String simulationStatus) {
         ObservableList<String> items = simulationsList.getItems();
-        items.set(simulationID -1, "Simulation ID: " + simulationID + " (" + simulationStatus + ")");
+        if(simulationStatus.equals("terminated because of an error!")){
+            items.set(simulationID -1, "Simulation ID: " + simulationID + " (error)");
+
+        }
+        else {
+            items.set(simulationID - 1, "Simulation ID: " + simulationID + " (" + simulationStatus + ")");
+        }
     }
 }

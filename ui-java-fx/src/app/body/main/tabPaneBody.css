@@ -1,9 +1,0 @@
- .custom-tab-pane .tab-header-area {
-    visibility: hidden;
-    -fx-padding: 0;
-}
-
- .custom-tab-pane .tab-content-area {
-    -fx-padding: 0;
-
-}

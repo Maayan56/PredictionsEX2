@@ -1,9 +1,9 @@
 .root {
-    -fx-background-color: #E1F0F5; /* Change to your desired background color */
+    -fx-background-color: #DED7AF; /* Change to your desired background color */
 }
 
 .tree-cell {
-    -fx-text-fill: #1E96C2; /* Change this to your desired text color */
+    -fx-text-fill: #856E2E; /* Change this to your desired text color */
 }
 
 #headerContainer #load-file-button{
@@ -11,8 +11,8 @@
     -fx-font-size: 14px;
     -fx-font-weight: BOLD;
     -fx-border-color:BLACK;
-    -fx-background-color: #088CBC;
-    -fx-font-family: "Times New Roman";
+    -fx-background-color: #B7A972;
+    -fx-font-family: "cursive";
 }
 
 #headerContainer .button-with-shape{
@@ -20,14 +20,14 @@
     -fx-font-size: 14px;
     -fx-font-weight: BOLD;
     -fx-border-color: BLACK;
-    -fx-background-color: #1E96C2;
-    -fx-font-family: "Times New Roman";
+    -fx-background-color: #B7A972;
+    -fx-font-family: "cursive";
 }
 
 /* Style all labels */
 .label {
     -fx-font-size: 15px; /* Change label font size */
-    -fx-font-family: "Times New Roman"; /* Change label font family */
+    -fx-font-family: "cursive"; /* Change label font family */
     -fx-text-fill: #333; /* Change label text color */
 }
 
@@ -37,8 +37,8 @@
     -fx-font-size: 14px;
     -fx-font-weight: BOLD;
     -fx-border-color: BLACK;
-    -fx-background-color: #1E96C2;
-    -fx-font-family: "Times New Roman";
+    -fx-background-color: #B7A972;
+    -fx-font-family: "cursive";
 }
 
 .button{
@@ -46,15 +46,15 @@
     -fx-font-size: 14px;
     -fx-font-weight: BOLD;
     -fx-border-color: BLACK;
-    -fx-background-color: #1E96C2;
-    -fx-font-family: "Times New Roman";
+    -fx-background-color: #B7A972;
+    -fx-font-family: "cursive";
 }
 
 
 #tab-pane-id .tile {
-    -fx-background-color: lightblue;
+    -fx-background-color: #B7A972;
     -fx-border-width: 5px;
-    -fx-border-color: #10475B;
+    -fx-border-color: #856E2E;
     -fx-background-radius: 5.0;
 }
 
@@ -63,21 +63,21 @@
     -fx-text-fill: BLack;
     -fx-font-size: 10px;
     -fx-font-weight: BOLD;
-    -fx-font-family: "Times New Roman";
+    -fx-font-family: "cursive";
 }
 
 .my-label-def{
     -fx-text-fill: BLack;
     -fx-font-size: 12px;
     -fx-font-weight: BOLD;
-    -fx-font-family: "Times New Roman";
+    -fx-font-family: "cursive";
 }
 
 .my-label-world-grid{
     -fx-text-fill: Black;
     -fx-font-size: 16px;
     -fx-font-weight: BOLD;
-    -fx-font-family: "Times New Roman";
+    -fx-font-family: "cursive";
 }
 
 
@@ -86,26 +86,26 @@
 #label1{
     -fx-font-size: 14px;
     -fx-font-weight: BOLD;
-    -fx-font-family: "Times New Roman";
+    -fx-font-family: "cursive";
 }
 
 #label2{
     -fx-font-size: 14px;
     -fx-font-weight: BOLD;
-    -fx-font-family: "Times New Roman";
+    -fx-font-family: "cursive";
 }
 
 #text-flow-1{
-    color: blue;
+    color: #A28129;
 }
 
 #text-flow-2{
-    color: blue;
+    color: #A28129;
 }
 
 /*header*/
 .move-to-page-button{
-    -fx-fill: #1E96C2;
+    -fx-fill: #B7A972;
     -fx-border-color: BLACK;
     -fx-text-fill: BLACK;
 
@@ -116,16 +116,16 @@
     -fx-text-fill: WHITE;
     -fx-font-size: 14px;
     -fx-font-weight: BOLD;
-    -fx-background-color: BLUE;
+    -fx-background-color: #A28129;
 }
 .label-queue{
     -fx-text-fill: WHITE;
     -fx-font-size: 10px;
     -fx-font-weight: BOLD;
-    -fx-background-color: BLUE;
+    -fx-background-color: #A28129;
 }
 .background{
-    -fx-background-color: BLUE;
+    -fx-background-color: #A28129;
 }
 
 
@@ -142,7 +142,7 @@
 
 #tab-pane-id .simulation-label {
     -fx-font-size: 12px;
-    -fx-background-color: #A4CAD6;
+    -fx-background-color: #B7A972;
     -fx-padding: 4px;
     -fx-border-radius: 2px;
 }
@@ -151,7 +151,7 @@
     -fx-font-size: 12px;
     -fx-padding: 4px;
     -fx-border-radius: 2px;
-    -fx-font-family: "Times New Roman";
+    -fx-font-family: "cursive";
 }
 
 .my-gridPane {
@@ -164,22 +164,16 @@
 #label1{
     -fx-font-size: 14px;
     -fx-font-weight: BOLD;
-    -fx-font-family: "Times New Roman";
+    -fx-font-family: "cursive";
 }
 
 #label2{
     -fx-font-size: 14px;
     -fx-font-weight: BOLD;
-    -fx-font-family: "Times New Roman";
+    -fx-font-family: "cursive";
 }
 
-#text-flow-1{
-    color: blue;
-}
 
-#text-flow-2{
-    color: blue;
-}
 
 
 

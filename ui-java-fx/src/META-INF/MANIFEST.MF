@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
 Main-Class: main.AppMain
-Class-Path: dto.jar system-engine.jar
+Class-Path: dto.jar systemengine.jar
 

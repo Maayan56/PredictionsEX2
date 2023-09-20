@@ -146,7 +146,7 @@ public class ResultsController {
             if (entitiesData.size() > 1000) {
                 int jump = 1000;
                 for (int i = 0; i < entitiesData.size(); i += jump) {
-                    int key = series.getData().isEmpty() ? 0 : (int) series.getData().get(series.getData().size() - 1).getXValue();
+                    int key = i;
                     int value = entitiesData.get(key);
                     series.getData().add(new XYChart.Data<>(key, value));
                 }
@@ -170,8 +170,8 @@ public class ResultsController {
         float sumOfValues = 0.0f;
             dtoPropertyHistogramForUi=systemEngine.getPropertyDataAfterSimulationRunningByHistogramByNames(simulationID,entityName,propertyName);
             for (Map.Entry<Object, Long> entry : dtoPropertyHistogramForUi.getPropertyHistogram().entrySet()) {
-                float key = (float)(entry.getKey());
-                float value = (float)(entry.getValue());
+                float key = Float.parseFloat(entry.getKey().toString());
+                float value = Float.parseFloat(entry.getValue().toString());
                 float product = key * value;
 
                 sumOfProducts += product;
@@ -202,18 +202,25 @@ public class ResultsController {
 
     public void handleSelectedProperty(TreeItem<String> selectedItem,SystemEngineAccess systemEngine,int simulationID){
         viewComboBox.setVisible(true);
-
+        viewComboBox.setPromptText("select option");
         if(systemEngine.getDtoSimulationProgressForUi(simulationID).getEntitiesLeft().get(selectedItem.getParent().getValue())>0){
             if(systemEngine.getDefinitionsDataFromSE().getPropertyDefinitionByName(selectedItem.getParent().getValue(),selectedItem.getValue()).getType().toLowerCase().equals("float"))
                 PropertyAverageValueLabel.setText(String.valueOf(calculatePropertyAverage(simulationID,selectedItem.getParent().getValue(),selectedItem.getValue())));
-            else
-                PropertyAverageValueLabel.setText("Property's ype is not numeric");
+            else{
+                PropertyAverageValueLabel.setText("Property's type is not numeric");
+                PropertyAverageValueLabel.setWrapText(true);
+            }
+
             BarChart<String, Number> histogram = createHistogram(selectedItem,systemEngine,simulationID);
             histogramGraphPane.setContent(histogram);
         }
         else{
-            PropertyAverageValueLabel.setText("Entity's population is 0 - no data to show");
-            histogramGraphPane.setContent(new Label("Entity's population is 0 - no data to show"));
+
+            PropertyAverageValueLabel.setText("Entity's population is 0");
+            PropertyAverageValueLabel.setWrapText(true);
+            Label zeroPopulation=new Label("Entity's population is 0 - no data to show");
+            zeroPopulation.setWrapText(true);
+            histogramGraphPane.setContent(zeroPopulation);
         }
         ConsistencyValueLabel.setText(String.valueOf(systemEngine.getConsistencyDTOByEntityPropertyName(simulationID,selectedItem.getParent().getValue(),selectedItem.getValue()).getConsistency()));
     }

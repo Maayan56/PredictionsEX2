@@ -118,7 +118,8 @@ public class Body3Controller {
 
             oldUpdateUiThreadThread  = new Thread(updateUiTask);
             oldUpdateUiThreadThread.start();
-            if(simulationResultsNodesMap.get(simulationID) != null){
+            if(simulationResultsNodesMap.get(simulationID) != null &&
+                    ! systemEngine.getAllSimulationsStatus().get(simulationID-1).equals(("terminated because of an error!"))){
                 simulationResultScrollPane.setContent(simulationResultsNodesMap.get(simulationID));
                 ResultsController resultsController = simulationResultControllersMap.get(simulationID);
                 resultsController.handleSimulationSelection(simulationID,systemEngine);
@@ -189,14 +190,11 @@ public class Body3Controller {
         Label label = new Label(message);
         Font font = new Font(16);
         label.setFont(font);
-        //Image image = new Image("file:ui-java-fx/src/resource/finishImage.jpg");
         Image image = new Image(getClass().getResource("/resource/finishImage.jpg").toExternalForm());
         ImageView imageView = new ImageView(image);
         VBox vbox = new VBox(label, imageView);
         vbox.setAlignment(Pos.CENTER);
         StackPane root = new StackPane(vbox);
-
-        //StackPane root = new StackPane(label);
         Scene scene = new Scene(root, 350, 250);
 
         primaryStage.setScene(scene);

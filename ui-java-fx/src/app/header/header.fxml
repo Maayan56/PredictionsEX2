@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<GridPane id="headerContainer" fx:id="headerComponent" alignment="TOP_CENTER" prefHeight="152.0" prefWidth="769.0" stylesheets="@header.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.header.HeaderController">
+<GridPane id="headerContainer" fx:id="headerComponent" alignment="TOP_CENTER" prefHeight="152.0" prefWidth="769.0" stylesheets="@../main/default.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.header.HeaderController">
    <columnConstraints>
       <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
    </columnConstraints>
@@ -23,7 +23,7 @@
    <children>
       <HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
          <children>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+            <VBox alignment="CENTER" prefHeight="115.0" prefWidth="127.0">
                <HBox.margin>
                   <Insets left="-40.0" />
                </HBox.margin>
@@ -34,12 +34,12 @@
                         <Insets top="5.0" />
                      </VBox.margin>
                   </Button>
-                  <Button fx:id="defaultSkinButton" mnemonicParsing="false" onMouseClicked="#onDefaultSkinClick" styleClass="my-label" text="Default skin">
+                  <Button fx:id="defaultSkinButton" mnemonicParsing="false" onAction="#onDefaultSkinClick" styleClass="my-label" text="Default skin">
                      <VBox.margin>
                         <Insets top="5.0" />
                      </VBox.margin>
                   </Button>
-                  <Button fx:id="animationsButton" mnemonicParsing="false" onMouseClicked="#onAnimationsClick" styleClass="my-label" text="Animatuons">
+                  <Button fx:id="animationsButton" mnemonicParsing="false" onMouseClicked="#onAnimationsClick" prefHeight="23.0" prefWidth="114.0" styleClass="my-label" text="Disable animations">
                      <VBox.margin>
                         <Insets top="5.0" />
                      </VBox.margin>
@@ -59,7 +59,7 @@
                   <Insets left="10.0" right="10.0" />
                </HBox.margin>
             </Label>
-            <GridPane fx:id="queueManagementGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="background" stylesheets="@header.css">
+            <GridPane fx:id="queueManagementGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="background" stylesheets="@../main/default.css">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="64.0" />
@@ -70,16 +70,16 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Label fx:id="waitingLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="my-label" text="Waiting to be executed" GridPane.halignment="CENTER" />
-                  <Label fx:id="overLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="my-label" text="Over" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                  <Label fx:id="currentlyExecutingLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="my-label" text="Currently underway" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                  <Label fx:id="valueWaitingLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="my-label" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <Label fx:id="waitingLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="label-queue" text="Waiting to be executed" GridPane.halignment="CENTER" />
+                  <Label fx:id="overLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="label-queue" text="Over" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <Label fx:id="currentlyExecutingLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="label-queue" text="Currently underway" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <Label fx:id="valueWaitingLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="label-queue" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
                   </Label>
-                  <Label fx:id="valueCurrentlyExecutingLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="my-label" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                  <Label fx:id="valueOverLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="my-label" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Label fx:id="valueCurrentlyExecutingLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="label-queue" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Label fx:id="valueOverLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="label-queue" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
                </children>
             </GridPane>
          </children>

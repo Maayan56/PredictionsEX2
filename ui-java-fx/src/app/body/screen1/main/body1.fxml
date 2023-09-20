@@ -11,10 +11,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.TextFlow?>
 
-<HBox id="body1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@body1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.body.screen1.main.Body1Controller">
+<HBox id="body1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@../../../main/default.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.body.screen1.main.Body1Controller">
    <children>
-      <TreeView fx:id="detailsTreeView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="NEVER" />
-      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+      <TreeView fx:id="detailsTreeView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="app-background" HBox.hgrow="NEVER" />
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="app-background" HBox.hgrow="ALWAYS">
          <children>
             <GridPane hgap="5.0" maxHeight="1.7976931348623157E308" vgap="5.0" VBox.vgrow="ALWAYS">
               <columnConstraints>

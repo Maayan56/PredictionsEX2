@@ -32,7 +32,7 @@ public class AppMain extends Application {
        // headerController.setPrimaryStage(primaryStage);
 
         Scene scene = new Scene(root, 850, 680);
-        scene.getStylesheets().add(getClass().getResource("/app/main/appGlobal1.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("/app/main/default.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.show();
 
