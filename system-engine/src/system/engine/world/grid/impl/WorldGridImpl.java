@@ -143,8 +143,8 @@ public final class WorldGridImpl implements WorldGrid {
     }
 
     private boolean isOnCorner(int row, int col){
-        return (row == 0 && col == 0 || row == 0 && col == gridColumns - 1 ||
-                row == gridRows-1 && col == 0 || row == gridRows-1 && col == gridColumns - 1);
+        return ((row == 0 && col == 0) || (row == 0 && col == gridColumns - 1) ||
+                (row == gridRows-1 && col == 0) || (row == gridRows-1 && col == gridColumns - 1));
     }
 
         private boolean isAtEdge(int row, int col) {
